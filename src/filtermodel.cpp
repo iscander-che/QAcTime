@@ -57,14 +57,3 @@ bool FilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& sourceParen
 
     return (sourceModel()->data(index).toDate() == QDate::currentDate());
 }
-
-//bool FilterModel::filterAcceptsColumn(int source_column, const QModelIndex& /* source_parent */) const
-//{
-//    if(source_column == E_COLUMN_TIME || source_column == E_COLUMN_DESCRIPTION ||
-//       source_column == E_COLUMN_CATEGORY || source_column == E_COLUMN_DURATION)
-//        return true;
-//    else
-//        return false;
-
-//    return false;
-//}
